@@ -6,7 +6,7 @@ from pydantic_settings import BaseSettings as SCBaseModel
 
 from schemas.artigo_schema import ArtigoSchema
 
-class UsuarioSchemaBase (BaseModel):
+class UsuarioSchemaBase (SCBaseModel):
     id: Optional[int] = None
     nome: str
     sobrenome: str
